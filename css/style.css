@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* header */
+header{
+    width: 100%;
+    padding: 30px 0;
+}
+.header{
+    height: 50px;
+    margin: 0 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar > ul{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    li {
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: #4d4d4d;
+            font-size: 16px;
+        }
+    }
+}
+.nav-bar > ul > li:nth-child(6){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(77, 175, 80);
+    padding: 15px 20px;
+    border-radius: 5px;
+
+    a{
+        color: white;
+        font-size: 16px;
+    }
+}
+
+/* hero-section */
+.container{
+    width: 100%;
+    height: 100%;
+}
+/* furst */
+.benner{
+    width: 100%;
+    height: 70vh;
+    background-color: #F5F7FA;
+}
+.benner-box{
+    height: 100%;
+    margin: 0 144px;
+    display: flex;
+}
+.benner-text{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    h2 {
+        font-size: 56px;
+        font-weight: bold;
+        text-align: left;
+        color: #4d4d4d;
+    }
+    p{
+        font-size: 14px;
+        color: #4d4d4d;
+    }
+    button{
+        background-color: rgb(77, 175, 80);
+        width: 110px;
+        padding: 15px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+}
+.benner-text > h2:nth-child(2){
+    color: rgb(77, 175, 80);
+}
+.benner-image{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* second */
+/* client */
+.client{
+    width: 100%;
+    background-color: white;
+    padding: 30px 0;
+}
+.client-box{
+    margin: 0 144px;
+}
+.client-title{
+    text-align: center;
+    h2{
+        font-size: 36px;
+        color: #4d4d4d;
+    }
+    p{
+        font-size: 16px;
+        color: #4d4d4d;
+    }
+}
+/* icon */
+.icon-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+
+/* community */
+.community-title{
+    margin-top: 56px;
+    text-align: center;
+    h2{
+        font-size: 36px;
+        color: #4d4d4d;
+    }
+    p{
+        font-size: 16px;
+        color: #4d4d4d;
+    }
+}
+.community-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+.community-card{
+    margin-top: 58px;
+    width: 300px;
+    height: 280px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow:0 3px 6px #ABBED1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: #4d4d4d;
+        text-align: center;
+        font-size: 28px;
+    }
+    span{
+        font-size: 14px;   
+        text-align: center;
+        color: #4d4d4d;
+    }
+}
+.community-card:hover{
+    box-shadow:0 6px 16px #ABBED1;
+    cursor: pointer;
+}
+
+/* unseen */
+.unseen{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.unseen-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 370px;
+    }
+}
+.unseen-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h2{
+        font-size: 36px;
+        color: #4d4d4d;
+    }
+    p{
+        color: #4d4d4d;
+    }
+    button{
+        width: 120px;
+        background-color: rgb(77, 175, 80);
+        color: #fff;
+        padding: 15px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+}
+
+/* third */
+.subcript{
+    width: 100%;
+    height: 300px;
+    background-color: #F5F7FA;
+}
+/* text */
+.subcript-box{
+    height: 100%;
+    margin: 0 144px;
+    display: flex;
+    align-items: center;
+}
+.subcript-content{
+    flex: 1;
+    h2{
+        font-size: 36px;
+        color: #4d4d4d;
+    }
+    p{
+        margin-top: 20px;
+        font-size: 16px;
+        color: #4d4d4d;
+    }
+}
+.subcript-content > h2:nth-child(2){
+    color: rgb(77, 175, 80);
+}
+/* icon */
+.subcript-icon{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    .subcription{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .number-sub{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p{
+                font-size: 20px;
+                font-weight: bold;
+                color: #4d4d4d;
+            }
+            span{
+                color: #4d4d4d  ;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/* fourth */
+.design-footer{
+    width: 100%;
+    background-color: #fff;
+}
+.design-box{
+    margin: 0 144px;
+    padding: 50px 0;
+    display: flex;
+    gap: 50px;
+}
+.design-image{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.design-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+
+    h2{
+        font-size: 36px;
+        color: #4d4d4d;
+    }
+    span{
+        font-size: 14px;
+        color: #4d4d4d;
+    }
+    button{
+        color: white;
+        background-color: rgb(77, 175, 80);
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+}
+
+/* fifth */
+.last-section{
+    width: 100%;
+    background-color: white;
+}
+.last-section-box{
+    margin: 0 144px;
+    padding: 30px 0;
+    display: flex;
+}
+.last-section-image{
+    flex: 1;
+}
+.last-section-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+
+        span{
+            font-size: 18px;
+            color: #4d4d4d;
+        }
+        h2{
+            font-size: 24px;
+            color: rgb(77, 175, 80);
+        }
+    }
+
+    .last-icon-group{
+        display: flex;
+        gap: 25px;
+        .meet{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                color: rgb(77, 175, 80);
+                font-weight: bold;
+                font-size: 26px;
+            }
+        }
+    }
+}
