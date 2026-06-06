@@ -17,18 +17,21 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.header > .logo > img{
+    width: 140px;
+}
 .nav-bar > ul{
     display: flex;
     align-items: center;
     gap: 24px;
-    li {
-        list-style: none;
-        a{
-            text-decoration: none;
-            color: #4d4d4d;
-            font-size: 16px;
-        }
-    }
+}
+.nav-bar > ul > li {
+    list-style: none;
+}
+.nav-bar > ul > li > a{
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 16px;
 }
 .nav-bar > ul > li:nth-child(6){
     display: flex;
@@ -37,11 +40,13 @@ header{
     background-color: rgb(77, 175, 80);
     padding: 15px 20px;
     border-radius: 5px;
-
-    a{
-        color: white;
-        font-size: 16px;
-    }
+}
+.nav-bar > ul > li:nth-child(6) > a {
+    color: white;
+    font-size: 16px;
+}
+.nav-bar > ul > li:nth-child(6) > img {
+    width: 30px;
 }
 
 /* hero-section */
@@ -67,34 +72,37 @@ header{
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-
-    h2 {
-        font-size: 56px;
-        font-weight: bold;
-        text-align: left;
-        color: #4d4d4d;
-    }
-    p{
-        font-size: 14px;
-        color: #4d4d4d;
-    }
-    button{
-        background-color: rgb(77, 175, 80);
-        width: 110px;
-        padding: 15px;
-        color: white;
-        border: none;
-        border-radius: 5px;
-    }
 }
-.benner-text > h2:nth-child(2){
+.benner-text > h1, h2 {
+    font-size: 56px;
+    font-weight: bold;
+    text-align: left;
+    color: #4d4d4d;
+}
+.benner-text > h2 {
     color: rgb(77, 175, 80);
+}
+.benner-text > p{
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.benner-text > button {
+    margin-top: 20px;
+    background-color: rgb(77, 175, 80);
+    width: 110px;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 .benner-image{
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: end;
+}
+.benner-image > img {
+    width: 350px;
 }
 
 /* second */
@@ -107,17 +115,17 @@ header{
 .client-box{
     margin: 0 144px;
 }
-.client-title{
+.client-title > h2 {
     text-align: center;
-    h2{
-        font-size: 36px;
-        color: #4d4d4d;
-    }
-    p{
-        font-size: 16px;
-        color: #4d4d4d;
-    }
+    font-size: 36px;
+    color: #4d4d4d;
 }
+.client-title > p {
+    text-align: center;
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
 /* icon */
 .icon-group{
     display: flex;
@@ -128,15 +136,16 @@ header{
 /* community */
 .community-title{
     margin-top: 56px;
+}
+.community-title > h2 {
     text-align: center;
-    h2{
-        font-size: 36px;
-        color: #4d4d4d;
-    }
-    p{
-        font-size: 16px;
-        color: #4d4d4d;
-    }
+    font-size: 36px;
+    color: #4d4d4d;
+}
+.community-title > p {
+    text-align: center;
+    font-size: 16px;
+    color: #4d4d4d;
 }
 .community-container{
     display: flex;
@@ -158,16 +167,16 @@ header{
     gap: 25px;
     justify-content: center;
     align-items: center;
-    h2{
-        color: #4d4d4d;
-        text-align: center;
-        font-size: 28px;
-    }
-    span{
-        font-size: 14px;   
-        text-align: center;
-        color: #4d4d4d;
-    }
+}
+.community-card > h2 {
+    color: #4d4d4d;
+    text-align: center;
+    font-size: 28px;
+}
+.community-card > span {
+    font-size: 14px;   
+    text-align: center;
+    color: #4d4d4d;
 }
 .community-card:hover{
     box-shadow:0 6px 16px #ABBED1;
@@ -186,32 +195,35 @@ header{
     flex: 1;
     display: flex;
     justify-content: center;
-    img{
-        width: 370px;
-    }
+}
+.unseen-image > img {
+    width: 370px;
 }
 .unseen-content{
     flex: 2;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    h2{
-        font-size: 36px;
-        color: #4d4d4d;
-    }
-    p{
-        color: #4d4d4d;
-    }
-    button{
-        width: 120px;
-        background-color: rgb(77, 175, 80);
-        color: #fff;
-        padding: 15px 0;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-    }
 }
+.unseen-content > h2 {
+    font-size: 36px;
+    color: #4d4d4d;
+}
+
+.unseen-content > p {
+    color: #4d4d4d;
+}
+.unseen-content > button {
+    width: 120px;
+    background-color: rgb(77, 175, 80);
+    color: #fff;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
 
 /* third */
 .subcript{
@@ -228,15 +240,15 @@ header{
 }
 .subcript-content{
     flex: 1;
-    h2{
-        font-size: 36px;
-        color: #4d4d4d;
-    }
-    p{
-        margin-top: 20px;
-        font-size: 16px;
-        color: #4d4d4d;
-    }
+}
+.subcript-content > h2{
+    font-size: 36px;
+    color: #4d4d4d;
+}
+.subcript-content > p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #4d4d4d;
 }
 .subcript-content > h2:nth-child(2){
     color: rgb(77, 175, 80);
@@ -247,27 +259,25 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-
-    .subcription{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
-        .number-sub{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            p{
-                font-size: 20px;
-                font-weight: bold;
-                color: #4d4d4d;
-            }
-            span{
-                color: #4d4d4d  ;
-                font-size: 16px;
-            }
-        }
-    }
+}
+.subcript-icon > .subcription {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.subcript-icon > .subcription > .number-sub{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.subcript-icon > .subcription > .number-sub > p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4d4d4d;
+}
+.subcript-icon > .subcription > .number-sub > span {
+    color: #4d4d4d;
+    font-size: 16px;
 }
 
 /* fourth */
@@ -293,24 +303,23 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 40px;
-
-    h2{
-        font-size: 36px;
-        color: #4d4d4d;
-    }
-    span{
-        font-size: 14px;
-        color: #4d4d4d;
-    }
-    button{
-        color: white;
-        background-color: rgb(77, 175, 80);
-        padding: 15px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-    }
+    gap: 40px;  
+}
+.design-content > h2{
+    font-size: 36px;
+    color: #4d4d4d;
+}
+.design-content > span {
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.design-content > button {
+    color: white;
+    background-color: rgb(77, 175, 80);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 /* fifth */
@@ -332,36 +341,41 @@ header{
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+}
+.last-section-content > .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+}
+.last-section-content > .text > span{
+    font-size: 18px;
+    color: #4d4d4d;
+}
+.last-section-content > .text > h2 {
+    font-size: 24px;
+    color: rgb(77, 175, 80);
+}
+.last-section-content > .last-icon-group {
+    display: flex;
+    gap: 25px;
+}
+.last-section-content > .last-icon-group > .meet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last-section-content > .last-icon-group > .meet > span {
+    color: rgb(77, 175, 80);
+    font-weight: bold;
+    font-size: 26px;
+}
 
-    .text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        gap: 40px;
-
-        span{
-            font-size: 18px;
-            color: #4d4d4d;
-        }
-        h2{
-            font-size: 24px;
-            color: rgb(77, 175, 80);
-        }
-    }
-
-    .last-icon-group{
-        display: flex;
-        gap: 25px;
-        .meet{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            span{
-                color: rgb(77, 175, 80);
-                font-weight: bold;
-                font-size: 26px;
-            }
-        }
+@media (max-width: 1024px){
+    .header{
+        width: 100%;
+        height: 50px;
+        background-color: red;
     }
 }
